@@ -1,9 +1,16 @@
-body {
-    font-family: Arial, sans-serif;
+/* Resetting default browser styles */
+html, body {
     margin: 0;
     padding: 0;
 }
 
+/* Setting up default font and background color */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5; /* Light gray background */
+}
+
+/* Styling the header */
 header {
     background-color: white;
     color: white;
@@ -11,6 +18,7 @@ header {
     text-align: center;
 }
 
+/* Styling the container for header content */
 .container {
     display: flex;
     justify-content: space-between;
@@ -18,6 +26,7 @@ header {
     padding: 10px;
 }
 
+/* Styling the search box */
 .search-box {
     flex-grow: 1;
     margin: 0 20px;
@@ -47,6 +56,7 @@ header {
     background-color: #e9efee;
 }
 
+/* Styling the category container */
 .category-container {
     text-align: center;
 }
@@ -56,6 +66,7 @@ header {
     margin: 0 10px; /* Adjust the space between headings */
 }
 
+/* Styling the section container */
 .section-container {
     text-align: center;
     margin-top: 20px; /* Adjust the margin as needed */
@@ -65,17 +76,26 @@ header {
     margin-bottom: 10px; /* Adjust the margin as needed */
 }
 
+/* Styling the box container */
 .box-container {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
 }
 
+/* Styling individual boxes */
 .box {
     flex-grow: 1;
     padding: 20px;
-    border: 1px solid #ccc;
+    border: 5px solid #908c8c;
     border-radius: 5px;
-    background-color: #f9f9f9;
+    background-color:white;
     box-sizing: border-box;
+    margin-left:40px;
+    margin-right:40px; /* Adjust the space between boxes */
+}
+
+/* Remove margin from the last box */
+.box:last-child {
+    margin-right:40px;
 }
