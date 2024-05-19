@@ -13,36 +13,34 @@ body {
 /* Styling the header */
 header {
     background-color: white;
-    color: white;
     padding: 10px 0;
-    text-align: center;
 }
 
 /* Styling the container for header content */
 .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: left;
-    padding: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
+
 
 /* Styling the search box */
 .search-box {
     flex-grow: 1;
-    margin: 0 20px;
-    max-width: 500px;
+    display: flex;
 }
 
 .search-box input[type="text"] {
     width: 100%;
     padding: 10px;
-    border: none;
+    border: 1px solid #ccc;
     border-radius: 5px;
     box-sizing: border-box;
     font-size: 16px;
+    margin-right: 10px;
 }
 
-.search-box button, .login-btn, .location-btn {
+.search-box button {
     padding: 10px 20px;
     background-color: #00b294;
     border: none;
@@ -52,11 +50,14 @@ header {
     font-size: 16px;
 }
 
-.login-btn, .location-btn {
+.search-box .btn-outline-secondary {
     background-color: #e9efee;
+    border-color: #e9efee;
+    color: #333;
 }
 
 /* Styling the category container */
+
 .category-container {
     text-align: center;
 }
@@ -75,7 +76,6 @@ header {
 .section-container h2 {
     margin-bottom: 10px; /* Adjust the margin as needed */
 }
-
 /* Styling the box container */
 .box-container {
     display: flex;
@@ -98,4 +98,22 @@ header {
 /* Remove margin from the last box */
 .box:last-child {
     margin-right:40px;
+}
+/* Card Customizations */
+.card-body h5, .card-body h6 {
+    text-align: left;
+}
+
+.card-body input.form-control {
+    margin-bottom: 10px;
+}
+
+.card-body button.btn {
+    width: 100%;
+}
+
+/* Ensure images are responsive */
+.card-img-top {
+    width: 100%;
+    height: auto;
 }
