@@ -1,70 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>BigBasket - Online Grocery Shopping</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BigBasket - Online Grocery Shopping</title>
+        <!-- Bootstrap CSS -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="style.css">
+    </head>
 <body>
-    <header>
-        <div class="container">
-            <h2>bigbasket</h2>
-            <style>
-                h2{
-                    color:black;
-                }
-
-            </style>
-            <div class="search-box">
-                <input type="text" placeholder="Search for Products...">
-                <button class="location-btn">Select Location</button>
-                <button class="login-btn">Login/Signup</button>
+    <header class="bg-white">
+        <div class="container d-flex justify-content-between align-items-center py-3">
+            <h2 class="text-dark">bigbasket</h2>
+            <div class="search-box d-flex">
+                <input type="text" class="form-control mr-2" placeholder="Search for Products...">
+                <button class="btn btn-outline-secondary mr-2">Select Location</button>
+                <button class="btn btn-outline-secondary">Login/Signup</button>
             </div>
         </div>
     </header>
-    <div class="category-container">
-        <h4>Shop by Category</h4>
-        <h4>Exotic Fruits and V</h4>
-        <h4>Tea</h4>
-        <h4>Nandhini</h4>
-        <h4>>></h4>
+
+    <div class="category-container text-center py-3 bg-light">
+        <h4 class="d-inline-block mx-3">Shop by Category</h4>
+        <h4 class="d-inline-block mx-3">Exotic Fruits and V</h4>
+        <h4 class="d-inline-block mx-3">Tea</h4>
+        <h4 class="d-inline-block mx-3">Nandhini</h4>
+        <h4 class="d-inline-block mx-3">&gt;&gt;</h4>
     </div>
-    <div class="section-container">
-        <h2 align="left">MySmart Basket</h2>
-        <div class="box-container">
-            <div class="box">
-                <img src="C:\Users\charu\OneDrive\Pictures\capsicum.jpeg">
-                <h3 align="left">Fresho</h3>
-                <h2 align="left">Capsicum-Green Loose</h2>
-                <input type="number" placeholder="1kg">
-                <h3 align="left">₹64</h3>
-                <input type="text" placeholder="Har Din Sasta!"><br><br>
-                <button>Add to Cart</button>
+
+    <div class="section-container container mt-4">
+        <h2 class="text-left">MySmart Basket</h2>
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="card h-100">
+                    <img src="C:/Users/charu/OneDrive/Pictures/capsicum.jpeg" class="card-img-top" alt="Capsicum-Green Loose">
+                    <div class="card-body">
+                        <h5 class="card-title">Fresho</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Capsicum-Green Loose</h6>
+                        <input type="number" class="form-control mb-2" placeholder="1kg">
+                        <h5>₹64</h5>
+                        <input type="text" class="form-control mb-2" placeholder="Har Din Sasta!">
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
             </div>
-            <div class="box">
-                <img src="C:\Users\charu\OneDrive\Pictures\carrot.jpeg">
-                <h3 align="left">Fresho</h3>
-                <h2 align="left">Carrot-Orange Loose</h2>
-                <input type="number" placeholder="1kg">
-                <h3 align="left">₹91</h3>
-                <input type="text" placeholder="Get it for ₹86.45!"><br><br>
-                <button>Add to Cart</button>
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="card h-100">
+                    <img src="C:/Users/charu/OneDrive/Pictures/carrot.jpeg" class="card-img-top" alt="Carrot-Orange Loose">
+                    <div class="card-body">
+                        <h5 class="card-title">Fresho</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Carrot-Orange Loose</h6>
+                        <input type="number" class="form-control mb-2" placeholder="1kg">
+                        <h5>₹91</h5>
+                        <input type="text" class="form-control mb-2" placeholder="Get it for ₹86.45!">
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
             </div>
-            <div class="box">
-                <img src="C:\Users\charu\OneDrive\Pictures\cauliflower.jpeg">
-                <h3 align="left">Fresho</h3>
-                <h2 align="left">Cauliflower</h2>
-                <input type="number" placeholder="1pc-(approx 400 to 600g)">
-                <h3 align="left">₹40.5</h3>
-                <input type="text" placeholder="Get it for ₹38.48!"><br><br>
-                <button>Add to Cart</button>
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="card h-100">
+                    <img src="C:/Users/charu/OneDrive/Pictures/cauliflower.jpeg" class="card-img-top" alt="Cauliflower">
+                    <div class="card-body">
+                        <h5 class="card-title">Fresho</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Cauliflower</h6>
+                        <input type="number" class="form-control mb-2" placeholder="1pc-(approx 400 to 600g)">
+                        <h5>₹40.5</h5>
+                        <input type="text" class="form-control mb-2" placeholder="Get it for ₹38.48!">
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
             </div>
-            <div class="box">
-                <img src="C:\Users\charu\OneDrive\Pictures\coriander.jpeg">
-                <h3 align="left">Fresho</h3>
-                <h2 align="left">Coriander Leaves</h2>
-                <input type="number" placeholder="1Kg">
-                <h3 align="left">₹272</h3><br><br><br>
-                <button>Add to Cart</button>
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="card h-100">
+                    <img src="C:/Users/charu/OneDrive/Pictures/coriander.jpeg" class="card-img-top" alt="Coriander Leaves">
+                    <div class="card-body">
+                        <h5 class="card-title">Fresho</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Coriander Leaves</h6>
+                        <input type="number" class="form-control mb-2" placeholder="1Kg">
+                        <h5>₹272</h5>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
